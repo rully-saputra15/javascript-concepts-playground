@@ -1,3 +1,27 @@
+/**
+ * Exercise: Implement an Asynchronous Data Processor
+
+Create a function called `createDataProcessor` that returns an object with methods to fetch, process, and analyze data asynchronously. The data processor should have the following features:
+
+1. Fetch data from multiple mock API endpoints (simulate with setTimeout).
+2. Process and combine the fetched data.
+3. Perform various analyses on the combined data.
+4. Cache processed results for faster subsequent retrievals.
+5. Provide a way to clear the cache.
+
+The mock data should represent information about books and their authors.
+
+Implement the following methods:
+
+- fetchData(): Fetches data from mock API endpoints.
+- processData(): Combines and processes the fetched data.
+- getBooksByAuthor(authorName): Returns books by a specific author.
+- getAverageRating(): Calculates the average rating of all books.
+- getMostProlifcAuthor(): Returns the author with the most books.
+- clearCache(): Clears the cached results.
+
+ */
+
 const createDataProcessor = () => {
     const data = new Map();
     const cache = new Map();
